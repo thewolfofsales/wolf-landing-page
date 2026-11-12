@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Wolf of Sales — Sales Starter Pack ($19)</title>
-<meta name="description" content="Four B2B sales frameworks you can use on your next call: 6 cue cards, the Discovery Call Framework, Frame Control and the Sales Matrix. $19, instant PDF, no subscription.">
+<meta name="description" content="Four B2B sales frameworks plus five path guides for interviews, pay, money, relationships and work. $19, instant PDF, no subscription.">
 <meta property="og:title" content="Stop losing deals you should be winning — The Wolf of Sales">
 <meta property="og:description" content="Four B2B sales frameworks for your next call. $19, instant PDF, no subscription.">
 <meta property="og:type" content="website">
@@ -108,6 +108,25 @@ section{padding:72px 0}
 .rail img{flex:0 0 86%;scroll-snap-align:center;width:86%}
 .rail::-webkit-scrollbar{height:6px}.rail::-webkit-scrollbar-thumb{background:var(--azure);border-radius:4px}
 .hint{font-size:13px;color:var(--faint);margin-top:6px}
+
+
+/* PATH CHOOSER */
+.paths{background:var(--navy)}
+.path-tabs{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 22px}
+.path-tab{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:17px;letter-spacing:1.5px;text-transform:uppercase;color:var(--mute);background:var(--card);border:1px solid var(--line);border-radius:100px;padding:10px 20px;cursor:pointer;transition:all .15s}
+.path-tab:hover{color:var(--ink);border-color:rgba(255,255,255,.3)}
+.path-tab[aria-selected="true"]{background:var(--azure);border-color:var(--azure);color:#fff}
+.path-panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:30px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px}
+.path-panel h3{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:34px;line-height:1;margin-bottom:12px}
+.path-panel p{font-size:18px;color:rgba(255,255,255,.88);margin-bottom:12px}
+.path-panel .lbl{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:14px;letter-spacing:2px;color:var(--green);display:block;margin-bottom:6px}
+.path-panel ul{margin:0 0 14px 20px;font-size:17px;color:rgba(255,255,255,.88)}
+.path-panel li{margin-bottom:5px}
+.path-quote{background:rgba(5,92,240,.16);border-left:3px solid var(--azure-l);border-radius:8px;padding:18px 20px;margin-bottom:14px}
+.path-quote strong{display:block;font-size:20px;line-height:1.3;margin-bottom:6px}
+.path-quote small{font-size:14px;color:var(--faint)}
+.path-fit{font-size:15px;color:var(--mute);border-top:1px solid var(--line);padding-top:12px}
+@media(max-width:760px){.path-panel{grid-template-columns:1fr;padding:22px}.path-panel h3{font-size:30px}}
 
 /* USE IT */
 .use{background:var(--navy)}
@@ -226,11 +245,29 @@ dialog button{position:fixed;top:14px;right:18px;background:#fff;color:#000;bord
 
 <!-- STRIP -->
 <div class="strip"><div class="wrap">
-  <div><b>4</b><span>Documents</span></div>
+  <div><b>9</b><span>Documents</span></div>
   <div><b>6</b><span>Cue cards</span></div>
   <div><b>$19</b><span>One payment</span></div>
   <div><b>0</b><span>Subscriptions</span></div>
 </div></div>
+
+
+<!-- PATHS -->
+<section class="paths" id="paths">
+  <div class="wrap">
+    <p class="eyebrow">Choose your path</p>
+    <h2 class="h2">One toolkit. <em>Pick where you will use it first.</em></h2>
+    <div class="path-tabs" role="tablist" aria-label="Choose your path">
+      <button class="path-tab" role="tab" type="button" data-path="b2b">B2B sales</button>
+      <button class="path-tab" role="tab" type="button" data-path="interviews">Interviews &amp; pay</button>
+      <button class="path-tab" role="tab" type="button" data-path="money">Money &amp; deals</button>
+      <button class="path-tab" role="tab" type="button" data-path="relationships">Relationships</button>
+      <button class="path-tab" role="tab" type="button" data-path="workplace">Workplace</button>
+    </div>
+    <div class="path-panel" id="pathPanel" role="tabpanel" aria-live="polite"></div>
+    <p class="hint">The four core tools are written for B2B sales calls. The path guides show how the same moves apply in other situations. You adapt them to your own voice, and nothing here guarantees a result.</p>
+  </div>
+</section>
 
 <!-- DEMO -->
 <section class="demo">
@@ -344,12 +381,14 @@ dialog button{position:fixed;top:14px;right:18px;background:#fff;color:#000;bord
     <p class="eyebrow" style="color:var(--green)">Simple pricing</p>
     <h2 class="h2">Everything for <em>one price.</em></h2>
     <div class="price-row"><span class="price"><sup>$</sup>19</span></div>
-    <p class="save">Four PDFs, one payment</p><br>
+    <p class="save">Nine PDFs, one payment</p><br>
     <ul class="incl">
       <li>6 Virtual Cue Cards (VC-01 to VC-06)</li>
       <li>Discovery Call Framework</li>
       <li>Frame Control Reference Card</li>
       <li>Sales Matrix Worksheet</li>
+      <li>Start Here: Pick Your Path</li>
+      <li>4 Path Guides: Interviews &amp; Pay, Money &amp; Deals, Relationships &amp; Conversations, Workplace Influence</li>
       <li>Instant PDF delivery, yours to keep</li>
     </ul><br>
     <a class="btn" href="https://stan.store/TheWolfOfSales/p/the-sales-starter-pack">Get the pack — $19</a>
@@ -367,6 +406,7 @@ dialog button{position:fixed;top:14px;right:18px;background:#fff;color:#000;bord
         <h3>This is for you if</h3>
         <ul>
           <li>You sell B2B: software, services, consulting, SaaS or any complex sale with several stakeholders</li>
+          <li>Or you want to apply sales skills to interviews, pay, negotiations, tough conversations or getting buy-in at work, and you are happy to adapt them yourself</li>
           <li>You have 2 to 10 years of experience and want a repeatable system</li>
           <li>You lose deals you should win and suspect the process is the problem</li>
           <li>You want frameworks that work on a Monday morning, not motivation</li>
@@ -376,7 +416,7 @@ dialog button{position:fixed;top:14px;right:18px;background:#fff;color:#000;bord
         <h3>Not for you if</h3>
         <ul>
           <li>You want a video course with modules and a certificate. These are reference pages, not a 10-week program</li>
-          <li>You sell B2C or retail</li>
+          <li>You sell B2C or retail and want scripts written for that</li>
           <li>You want scripts to read word for word without thinking. They need judgment and curiosity about the buyer</li>
           <li>You want a magic close. There is no such thing</li>
         </ul>
@@ -410,7 +450,7 @@ dialog button{position:fixed;top:14px;right:18px;background:#fff;color:#000;bord
   <div class="narrow">
     <p class="eyebrow">Questions</p>
     <h2 class="h2">Quick <em>answers.</em></h2>
-    <details><summary>What do I actually get?</summary><p>Four PDFs, delivered instantly after checkout: the 6-card Virtual Cue Card Pack, the Discovery Call Framework, the Frame Control Reference Card and the Sales Matrix Worksheet.</p></details>
+    <details><summary>What do I actually get?</summary><p>Nine PDFs, delivered instantly after checkout: the four core tools (the 6-card Virtual Cue Card Pack, the Discovery Call Framework, the Frame Control Reference Card and the Sales Matrix Worksheet, all written for B2B sales calls), plus a Start Here guide and four path guides for interviews and pay, money and deals, relationships and conversations, and workplace influence.</p></details>
     <details><summary>Can I print them?</summary><p>Yes. They are designed to sit on a second screen during a call, or to be printed and kept on your desk.</p></details>
     <details><summary>Is this a course?</summary><p>No. There is no video, community or certification. These are reference pages you use on calls.</p></details>
     <details><summary>Will I be charged again?</summary><p>No. It is one payment with no subscription and no upsell after checkout.</p></details>
@@ -468,5 +508,38 @@ dialog button{position:fixed;top:14px;right:18px;background:#fff;color:#000;bord
   });
 })();
 </script>
+
+<script>
+(function(){
+  var CHECKOUT='https://stan.store/TheWolfOfSales/p/the-sales-starter-pack';
+  var P={
+    b2b:{h:'B2B sales',who:'You sell to businesses and run discovery calls, demos and negotiations.',use:['Discovery Call Framework: the 5 Power Questions','Sales Matrix Worksheet: Challenge, Evidence, Impact','6 Virtual Cue Cards for the moments that decide deals'],q:'What happens if nothing changes?',qs:'Question 3 of the Discovery Call Framework. Start here.',fit:'Written for B2B sales calls. No adapting needed.',
+      hero:{h:'Stop losing deals <span>you should be winning.</span>'}},
+    interviews:{h:'Interviews &amp; pay',who:'You are interviewing, weighing an offer or asking for a raise.',use:['Questions to ask so an interview becomes a conversation','A Challenge, Evidence, Impact worksheet for your pay case','Word-for-word lines for salary expectations, offers and follow-up'],q:'What would success look like in this role after 90 days?',qs:'From the Interviews &amp; Pay guide.',fit:'The core tools are written for sales calls. This guide shows how to adapt them. No guarantee of an offer or a raise.',
+      hero:{h:'Walk into the interview <span>with better questions.</span>',l:'Sales skills for interviews, offers and pay conversations: word-for-word lines, a pay-case worksheet and a follow-up plan. Written for sales calls, adapted for you.'}},
+    money:{h:'Money &amp; deals',who:'You price your own work, handle &ldquo;too expensive&rdquo; or negotiate a purchase or contract.',use:['A 4-step reply to price pushback','Worksheet for your target and walk-away numbers','Five negotiating principles, with honest caveats'],q:'Compared to what?',qs:'The cue card reply to &ldquo;it is too expensive.&rdquo; Then pause.',fit:'General information only. Not legal or financial advice.',
+      hero:{h:'Answer &ldquo;too expensive&rdquo; <span>without cutting your price.</span>',l:'Sales skills for pricing your work and negotiating fairly: reply scripts, a numbers worksheet and a follow-up plan. Written for sales calls, adapted for you.'}},
+    relationships:{h:'Relationships &amp; conversations',who:'You are meeting people, going on first dates or preparing a hard conversation.',use:['Questions that start real conversations','Listening cues and a clear, kind way to ask','A calm structure for hard conversations'],q:'I had a great time. Would you like to do it again? Dinner on Thursday?',qs:'A clear ask, and fine with either answer.',fit:'Built on curiosity and clarity. The pressure and scarcity tactics from the sales frames are deliberately left out. Not counselling.',
+      hero:{h:'Ask better questions. <span>Listen like it matters.</span>',l:'Sales skills for first dates and hard conversations, without the games: good questions, listening cues and a clear, kind ask. Written for sales calls, adapted for you.'}},
+    workplace:{h:'Workplace influence',who:'You need buy-in, a stalled decision moved or a follow-up that gets a reply.',use:['Scripts for stuck decisions and &ldquo;let&rsquo;s circle back&rdquo;','A Challenge, Evidence, Impact business case','A 3-touch follow-up that moves work along'],q:'Can we put 15 minutes in on Thursday so I know it is moving?',qs:'A next step with a date turns a maybe into a plan.',fit:'Influence means helping people decide well with good information.',
+      hero:{h:'Get the decision <span>unstuck.</span>',l:'Sales skills for getting buy-in at work: scripts for stalled decisions, a business-case worksheet and a follow-up plan. Written for sales calls, adapted for you.'}}
+  };
+  var tabs=document.querySelectorAll('.path-tab'),panel=document.getElementById('pathPanel');
+  var h1=document.querySelector('.hero h1'),lede=document.querySelector('.hero .lede');
+  var defH=h1.innerHTML,defL=lede.innerHTML;
+  function show(k,setHero){
+    var d=P[k]||P.b2b;if(!P[k])k='b2b';
+    tabs.forEach(function(t){t.setAttribute('aria-selected',t.dataset.path===k?'true':'false')});
+    panel.innerHTML='<div><h3>'+d.h+'</h3><p>'+d.who+'</p><span class="lbl">You will use</span><ul>'+d.use.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+
+      '<a class="btn" href="'+CHECKOUT+'">Get the pack &mdash; $19</a><p class="hint">All nine PDFs, every path, one payment.</p></div>'+
+      '<div><span class="lbl">A line from the guide</span><div class="path-quote"><strong>&ldquo;'+d.q+'&rdquo;</strong><small>'+d.qs+'</small></div><p class="path-fit">'+d.fit+'</p></div>';
+    if(setHero){h1.innerHTML=d.hero.h||defH;lede.innerHTML=d.hero.l||defL}
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){show(t.dataset.path,false)})});
+  var q=''; try{q=new URLSearchParams(location.search).get('path')||''}catch(e){}
+  q=q.toLowerCase(); show(P[q]?q:'b2b',!!P[q]&&q!=='b2b');
+})();
+</script>
+
 </body>
 </html>
